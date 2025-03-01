@@ -81,3 +81,17 @@ iframe, embed {
   color: #fff;
   filter: brightness(92.5%);
 }
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  filter: brightness(92.5%);
+}

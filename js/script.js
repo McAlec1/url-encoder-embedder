@@ -116,11 +116,24 @@ function generateAll() {
     <p><small>Note: Some browsers may block pop-ups. Enable pop-ups for this site if needed.</small></p>
   `;
 }
+
 document.getElementById('urlInput').addEventListener('keypress', function(e) {
   if (e.key === 'Enter') {
       generateAll();
   }
 });
+
+document.getElementById('themeToggle').addEventListener('click', function() {
+  const themeStylesheet = document.getElementById('themeStylesheet');
+  if (themeStylesheet.getAttribute('href') === '/css/dark.css') {
+    themeStylesheet.setAttribute('href', '/css/light.css');
+    this.textContent = 'Switch to Dark Mode';
+  } else {
+    themeStylesheet.setAttribute('href', '/css/dark.css');
+    this.textContent = 'Switch to Light Mode';
+  }
+});
+
 window.onload = function() {
   const urlParam = urlParams.get('url');
   if (urlParam) {

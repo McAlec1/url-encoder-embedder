@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>URL Embedder</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link id="themeStylesheet" rel="stylesheet" href="/css/dark.min.css">
 </head>
 <body>
   <h1>McAlec's Simple URL Encoder/Embedder</h1>
   <p>by McAlec (duh)</p>
-  <p>Source code available on <a href="https://github.com/mcalec-dev/url-encoder-embedder/">GitHub</a>.</p>
+  <p>Source code available on <a href="//github.com/mcalec-dev/url-encoder-embedder/">GitHub</a>.</p>
     <div class="input-section">
       <p>Enter a URL you would like to encode/embed</p>
       <input type="url" id="urlInput" placeholder="example.com, https://example.com/, etc.">
@@ -55,6 +55,7 @@
         <div id="blankPreview"></div>
       </div>
     </div>
-    <script defer src="/js/script.js"></script>
+    <button id="themeToggle" class="theme-toggle">Switch to Light Mode</button>
+    <script defer src="/js/script.min.js"></script>
 </body>
 </html>
